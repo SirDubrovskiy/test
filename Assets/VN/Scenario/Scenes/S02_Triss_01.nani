@@ -1,0 +1,15 @@
+@Map turn:Off
+@back Location_01_Triss_Room
+@Char Triss.idle pos:50,-50
+Трисс: {PlayerName}, слушай внимательно. Недалеко от старого промышленного района упал грузовой самолет.
+Трисс: В нём был артефакт, который может сильно изменить баланс сил в городе.
+Трисс: Принесёшь мне артефакт, {PlayerName}? Награда будет не только денежная… и да, я слежу за каждым твоим шагом.
+@setquest id:1 stage:0
+@set Quest_01_Stage=0
+@notify id:4
+@hide Triss
+@set D_Triss_Scene01_01=false
+@set D_Triss_Scene01_01=true
+@Map turn:On
+@hidePrinter 
+@stop

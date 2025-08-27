@@ -1,0 +1,22 @@
+@Map turn:Off
+@back Location_02_Yen_Room
+@Char Yen.idle pos:50,-50
+
+Йен: {PlayerName}, что тебе нужно?
+Player: Мне нужна твоя электронная отмычка
+Йен: Она лежит где-то в той куче вещей по ищи там 
+
+@set Quest_01_Stage=1
+
+@notify id:5
+
+@set MiniGameStarted=false
+@playminigame id:1 command:stop
+@set MiniGameStarted=true
+@playminigame id:1 scene:S04_Yen_02 command:play
+
+@hidePrinter 
+
+@hideChars
+
+@stop

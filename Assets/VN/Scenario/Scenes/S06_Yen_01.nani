@@ -1,0 +1,13 @@
+@Map turn:Off
+@back Location_02_Yen_Room
+Player: Странно, её нет на месте
+
+@set Quest_01_Stage=4
+
+@notify id:5
+
+@hidePrinter 
+@Map turn:On
+@set D_Yen_Scene_06_01=false
+@set D_Yen_Scene_06_01=true
+@stop

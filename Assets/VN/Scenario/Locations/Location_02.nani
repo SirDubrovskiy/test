@@ -1,0 +1,15 @@
+@if D_Triss_Scene01_01
+    @if D_Yen_Scene04_01
+        @if hasItem
+            @goto S06_Yen_01
+        @else
+            @goto S04_Yen_03
+        @endif
+    @else
+        @goto S03_Yen_01
+    @endif
+@else
+    @goto S03_Yen_02
+@endif
+
+@stop

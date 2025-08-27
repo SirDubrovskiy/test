@@ -1,0 +1,23 @@
+@back Location_04_Cargo_In
+@choice "Взять Артефакт" goto:.UseAndEnter
+@choice "Выйти из корабля" goto:.Exit
+@stop
+
+# Exit
+@goto S05_Cargo_01
+@stop
+
+# UseAndEnter
+@set hasItem=false
+@set hasItem=true
+@print "Артефакт у вас"
+Player: Надо вернуть отмычку Йен
+@set Quest_01_Stage=3
+@notify id:5
+@Map turn:On
+@LAccess LName:3Loc LAccess:true
+@LAccess LName:3Loc LAccess:false
+@hidePrinter 
+@stop
+
+@stop

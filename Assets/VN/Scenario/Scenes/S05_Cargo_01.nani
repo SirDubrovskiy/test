@@ -1,0 +1,15 @@
+@Map Turn:Off
+@back Location_03_Cargo_Out
+
+@choice "Воспользоваться отмычкой" goto:.UseAndEnter
+@choice Уйти goto:.Exit
+@stop
+
+
+# Exit
+@Map Turn:On
+@stop
+
+# UseAndEnter
+@goto S05_Cargo_02
+@stop

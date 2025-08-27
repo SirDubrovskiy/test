@@ -1,0 +1,45 @@
+@Map Turn:Off
+@back Location_01_Triss_Room
+@Char Triss.idle look:right pos:25,-50
+@Char Yen.idle pos:75,-50
+
+@choice "Отдать Артефакт Трисс" goto:.Triss
+@choice "Отдать Артефакт Йен" goto:.Yen
+@choice "Оставить Артефакт себе" goto:.Self
+@stop
+
+# Triss
+@set Rel_Yen-=5
+@set Rel_Triss+=5
+@set Quest_01_Complete=true
+@Notify id:0
+@Notify id:3
+@Notify id:6
+@QComplete
+@Map Turn:On
+@hideChars
+@stop
+
+# Yen
+@set Rel_Yen+=5
+@set Rel_Triss-=5
+@set Quest_01_Complete=true
+@Notify id:2
+@Notify id:1
+@Notify id:6
+@QComplete
+@Map Turn:On
+@hideChars
+@stop
+
+# Self
+@set Rel_Yen-=5
+@set Rel_Triss-=5
+@set Quest_01_Complete=true
+@Notify id:1
+@Notify id:3
+@Notify id:6
+@QComplete
+@Map Turn:On
+@hideChars
+@stop

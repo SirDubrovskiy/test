@@ -1,0 +1,9 @@
+@if D_Yen_Scene_06_01
+    @goto S07_Triss_01
+@else
+    @if D_Triss_Scene01_01
+        @goto S02_Triss_02
+    @else
+        @goto S02_Triss_01
+        
+@stop

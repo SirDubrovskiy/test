@@ -1,0 +1,4 @@
+@back Location_MainMenu
+@input PlayerName summary:"Choose your name."
+@stop
+@goto Location_01

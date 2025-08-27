@@ -1,0 +1,11 @@
+@hideChars
+@Map Turn:Off
+@back Location_01_Triss_Room
+@Char Triss.idle pos:50,-50
+
+Трисс: {PlayerName}, ты уже принес артефакт?
+
+@Map Turn:On
+@hidePrinter
+@hideChars
+@stop

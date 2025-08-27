@@ -1,0 +1,7 @@
+@Map Turn:Off
+@back Location_03_Cargo_Out
+Player: У меня нет с собой отмычки.
+@wait i
+@Map Turn:On
+@hidePrinter
+@stop
